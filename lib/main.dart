@@ -17,6 +17,12 @@ class MyApp extends StatelessWidget {
           seedColor: const Color.fromRGBO(254, 206, 1, 1),
           primary: const Color.fromRGBO(254, 206, 1, 1)
           ),
+          appBarTheme: const AppBarTheme(
+            titleTextStyle: TextStyle(
+              fontSize: 20,
+              color: Colors.black,
+            )
+          ),
         inputDecorationTheme: const InputDecorationTheme(
           hintStyle: TextStyle(
             fontSize: 16,
@@ -28,14 +34,19 @@ class MyApp extends StatelessWidget {
             fontWeight: FontWeight.bold,
             fontSize: 20,
           ),
+          titleLarge: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 35,
+          ),
           bodySmall: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 16,
           )
-        )
+        ),
+        useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: const HomePage(),
+      home:  const HomePage(),
     );
   }
 }
